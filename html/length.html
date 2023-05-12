@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter - Let's Make Our Lives Easy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1300px)" href="../css/phone.css">
+    <script src="../JS/length.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <!-- logo -->
+            <div id="logo">
+                <img src="../Img/un-logo.png" alt="unit-converter">
+            </div>
+            <!-- navigation bar -->
+            <div id="nav">
+                <nav id="navbar">
+                    <ul>
+                        <li class="item"><a href="../html/length.html">Length</a></li>
+                        <li class="item"><a href="../html/temparature.html">Temparature</a></li>
+                        <li class="item"><a href="../html/area.html">Area</a></li>
+                        <li class="item"><a href="../html/volume.html">Volume</a></li>
+                        <li class="item"><a href="../html/weight.html">Weight</a></li>
+                        <li class="item"><a href="../html/time.html">Time</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- mainbody -->
+        <div class="main">
+            <div id="calculator">
+                <h1>Length Converter</h1><br>
+                <div class="maincontainer">
+                    <form class="len">
+                        <div class="box">
+                            <div class="items">
+                                <label>From Unit:</label>
+                                <select id="fromUnit">
+                                    <option value="1">Meter</option>
+                                    <option value="2">Kilometer</option>
+                                    <option value="3">Centimeter</option>
+                                    <option value="4">Millimeter</option>
+                                    <option value="5">Micrometer</option>
+                                    <option value="6">Nanometer</option>
+                                    <option value="7">Mile</option>
+                                    <option value="8">Yard</option>
+                                    <option value="9">Foot</option>
+                                    <option value="10">Inch</option>
+                                    <option value="11">Light Year</option>
+                                </select>
+                            </div>
+                            <div class="items">
+                                <label>To Unit:</label>
+                                <select id="toUnit">
+                                    <option value="1">Meter</option>
+                                    <option value="2">Kilometer</option>
+                                    <option value="3">Centimeter</option>
+                                    <option value="4">Millimeter</option>
+                                    <option value="5">Micrometer</option>
+                                    <option value="6">Nanometer</option>
+                                    <option value="7">Mile</option>
+                                    <option value="8">Yard</option>
+                                    <option value="9">Foot</option>
+                                    <option value="10">Inch</option>
+                                    <option value="11">Light Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="items">
+                                <label>Enter Length:</label>
+                                <input type="number" id="Input">
+                            </div>
+                            <div class="items">
+                                <label>Result:</label>
+                                <div id="result"></div>
+                            </div>
+                        </div>
+                </div>
+                <div class="main-btn">
+                    <button class="btn" id="resetBtn">Reset</button>
+                    <button class="btn" id="calculateBtn">Calculate</button>
+                    <br><br><br>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            &copy;Copyright 2023.Made by Sreshtha Mukherjee.All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

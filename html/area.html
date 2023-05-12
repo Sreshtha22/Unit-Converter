@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter - Let's Make Our Lives Easy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="../css/phone.css">
+    <script src="../JS/area.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <!-- logo -->
+            <div id="logo">
+                <img src="../Img/un-logo.png" alt="unit-converter">
+            </div>
+            <!-- navigation bar -->
+            <nav id="navbar">
+                <ul>
+                    <li class="item"><a href="../html/length.html">Length</a></li>
+                    <li class="item"><a href="../html/temparature.html">Temparature</a></li>
+                    <li class="item"><a href="../html/area.html">Area</a></li>
+                    <li class="item"><a href="../html/volume.html">Volume</a></li>
+                    <li class="item"><a href="../html/weight.html">Weight</a></li>
+                    <li class="item"><a href="../html/time.html">Time</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- mainbody -->
+        <div class="main">
+            <div id="calculator">
+                <h1>Area Converter</h1><br>
+                <div class="maincontainer">
+                    <form class="len">
+                        <div class="box">
+                            <div class="items">
+                                <label>From Unit:</label>
+                                <select id="fromUnit">
+                                    <option value="1">Square Meter</option>
+                                    <option value="2">Square Kilometer</option>
+                                    <option value="3">Square Centimeter</option>
+                                    <option value="4">Square Millimeter</option>
+                                    <option value="5">Square Micrometer</option>
+                                    <option value="6">Hectare</option>
+                                    <option value="7">Square Mile</option>
+                                    <option value="8">Square Yard</option>
+                                    <option value="9">Square Foot</option>
+                                    <option value="10">Square Inch</option>
+                                    <option value="11">Acre</option>
+                                </select>
+                            </div>
+                            <div class="items">
+                                <label>To Unit:</label>
+                                <select id="toUnit">
+                                    <option value="1">Square Meter</option>
+                                    <option value="2">Square Kilometer</option>
+                                    <option value="3">Square Centimeter</option>
+                                    <option value="4">Square Millimeter</option>
+                                    <option value="5">Square Micrometer</option>
+                                    <option value="6">Hectare</option>
+                                    <option value="7">Square Mile</option>
+                                    <option value="8">Square Yard</option>
+                                    <option value="9">Square Foot</option>
+                                    <option value="10">Square Inch</option>
+                                    <option value="11">Acre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="items">
+                                <label>Enter Area:</label>
+                                <input type="number" id="Input">
+                            </div>
+                            <div class="items">
+                                <label>Result:</label>
+                                <div id="result"></div>
+                            </div>
+                        </div>
+                </div>
+                <div class="main-btn">
+                    <button class="btn" id = "resetBtn">Reset</button>
+                    <button class="btn" id = "calculateBtn">Calculate</button>
+                    <br><br><br>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

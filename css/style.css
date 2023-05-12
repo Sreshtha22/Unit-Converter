@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Merriweather:wght@300&family=Prata&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Logo */
+#logo {
+    margin: 10px 78px;
+    position: fixed;
+}
+
+#logo img {
+    height: 37px;
+    margin: 3px 6px;
+    border-radius: 16px;
+    width: 40px;
+    z-index: 9999;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: column;
+    background-color: black;
+}
+
+/* Navigation Bar : List Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(17, 87, 7);
+    background-color: antiquewhite;
+}
+
+/* mainbody */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    background: url(../Img/background.jpg) no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#calculator {
+    background-color: #fff;
+    box-shadow: 19px 25px 45px #f0caef;
+    padding: 70px;
+    margin: 45px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: darkgreen;
+    font-family: 'Castoro Titling', cursive;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Prata', serif;
+    margin-bottom: 10px;
+}
+
+.len{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.box{
+     margin: 15px;
+}
+
+input[type="number"],
+select {
+    width: 87%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.main-btn{
+    text-align: center;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #585ec9;
+}
+
+#result {
+    width: 78%;
+    padding: 21px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 14px 8px;
+}
